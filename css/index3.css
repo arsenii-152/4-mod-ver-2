@@ -67,13 +67,17 @@ li {
    -webkit-text-fill-color: transparent;
    color: #0B2349;
 }
+.box {
+  position: relative;
+  padding: 0 212px 0 212px;
+}
 h1 {
   width: 556px;
   height: 110px;
   font-family: Ubuntu;
   font-style: normal;
   font-weight: normal;
-  font-size: 96px;
+  font-size: 64px;
   text-align: center;
   color: #000000;
   margin: auto;
@@ -84,4 +88,109 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 528px;
+}
+.grid-box {
+  display: grid;
+  grid-template-columns: 258px 294px 451px;
+  transform: translateY(-350px);
+}
+.blue {
+  width: 80px;
+  height: 80px;
+  border-radius: 81px;
+  background-color: #2D64AD;
+  margin-bottom: 49px;
+}
+.red {
+  width: 80px;
+  height: 80px;
+  border-radius: 81px;
+  background-color: #E62622;
+  margin-bottom: 49px;
+}
+.yellow {
+  width: 80px;
+  height: 80px;
+  border-radius: 81px;
+  background-color: #F8EA1B;
+  margin-bottom: 49px;
+}
+.orange {
+  width: 80px;
+  height: 80px;
+  border-radius: 81px;
+  background-color: #F8AC1A;
+}
+.info {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  text-align: left;
+  transform: translate3d(0px, 0px, 0);
+}
+p {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  transform: translate3d(90px, 20px, 0);
+}
+.lamp {
+  transform: translate3d(12px, 49px, 0);
+}
+.box-one {
+  height: 361px;
+  position: relative;
+}
+.box-two {
+  height: 361px;
+  position: relative;
+}
+.box-three {
+  height: 361px;
+  position: relative;
+  padding: 0 0 0 60px;
+}
+.inst {
+  transform: translate3d(90px, -13px, 0);
+}
+footer {
+  position: relative;
+  width: 100%;
+  height: 209px;
+  background: linear-gradient(180deg, #4E79E3 0%, #994EE3 100%);
+  padding: 50px 445px 0 445px;
+}
+h4 {
+  display: inline-block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+.right {
+  margin-right: 272px;
+}
+.vk {
+  position: absolute;
+  transform: translate3d(-420px, 0, 0);
+  display: inline-block;
+}
+.hse {
+  position: absolute;
+  transform: translate3d(-340px, 0, 0);
+  display: inline-block;
+}
+.logos {
+  display: inline-block;
+  position: absolute;
+  transform: translate3d(-137px, 60px, 0);
 }

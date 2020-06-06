@@ -98,18 +98,18 @@ h1 {
   font-family: 'Old Standard TT', serif;
 }
 .top {
-  transform: translateY(50px);
+  transform: translateY(0px);
   font-weight: 500;
   font-size: 64px;
   line-height: 103px;
 }
 .bottom {
-  transform: translateY(50px);
+  transform: translateY(0px);
   font-size: 29px;
   line-height: 46px;
 }
 .btn {
-  margin-top: 180px;
+  margin-top: 130px;
   position: absolute;
   font-family: Ubuntu;
   font-style: normal;
@@ -136,7 +136,7 @@ h1 {
   font-size: 43px;
   line-height: 52px;
   color: #FFF;
-  margin-top: 270px;
+  margin-top: 220px;
 }
 .grid-box {
   display: grid;
@@ -222,4 +222,19 @@ h4 {
 }
 .right {
   margin-right: 272px;
+}
+.vk {
+  position: absolute;
+  transform: translate3d(-420px, 49px, 0);
+  display: inline-block;
+}
+.hse {
+  position: absolute;
+  transform: translate3d(-340px, 49px, 0);
+  display: inline-block;
+}
+.logos {
+  display: inline-block;
+  position: absolute;
+  transform: translate3d(-137px, 60px, 0);
 }
