@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/index4.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <title></title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="about" >
+          <a href="index.html">О фестивале</a>
+        </li>
+        <li class="schedule" >
+          <a href="index2.html">Расписание</a>
+        </li>
+        <li class="place" >
+          <a href="index3.html">Площадка</a>
+        </li>
+        <li class="posters" >
+          <a href="index4.html">Плакаты</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="graph" >Графические</h1>
+    <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/4 graph.png" alt=""> </div>
+        <div class="swiper-slide"><img src="img/8,5.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/9.jpg" alt=""></div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+</div>
+<h1 class="typograph" >Типорафические</h1>
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/typ1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/typ2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/typ3.jpg" alt=""></div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+</div>
+
+
+    <footer>
+        <h4 class="right">Портфолио</h4>
+        <img class="vk" src="img/vk.png" alt="">
+        <img class="hse" src="img/hse.png" alt="">
+        <h4>Партнеры</h4>
+        <img class="logos" src="img/logos.png" alt="">
+    </footer>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    fadeEffect: {
+    crossFade: true
+    },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+  </script>
+  </body>
+</html>
