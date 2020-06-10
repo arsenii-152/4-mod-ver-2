@@ -112,10 +112,13 @@ h1 {
   padding-top: 85px;
 }
 .info-right {
+  display: grid;
   background-color: #E54E4D;;
   height: 223px;
-  padding-top: 51px;
-  padding-left: 147px;
+}
+.clicker {
+  align-self: center;
+  justify-self: center;
 }
 p {
   font-family: Montserrat;
@@ -234,6 +237,7 @@ h4 {
   padding-top: 50px;
 }
 .rf {
+  display: grid;
   height: 200px;
   padding-left: 223px;
   padding-top: 50px;
@@ -247,4 +251,101 @@ h4 {
 }
 img {
   margin-top: 26px;
+}
+.logos {
+  margin-left: -12px;
+}
+@media (max-width: 1180px) {
+  p {
+    font-size: 28px;
+  }
+  .btn {
+    font-size: 28px;
+    line-height: 55px;
+    width: 281px;
+    height: 79px;
+    }
+    li {
+      font-family: Ubuntu;
+      display: inline-block;
+      color: white;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      margin-right: 64px;
+      transition: 1000ms;
+      cursor: default;
+    }
+    .info-left {
+      background-color: #E54E4D;;
+      height: 123px;
+      padding-top: 43px;
+    }
+    .info-right {
+      display: grid;
+      background-color: #E54E4D;;
+      height: 123px;
+    }
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 18px;
+  }
+  li {
+    display: none;
+  }
+  .picture {
+    padding-top: 139px;
+    background-color: blue;
+    height: 410px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/img.jpg);
+    background-size: cover;
+  }
+  .grid-box {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .pict-1 {
+   grid-row-start: 2;
+  }
+  .pict-2 {
+
+  }
+  .pict-3 {
+   grid-row-start: 6;
+  }
+  .content-1 {
+   grid-row-start: 1;
+  }
+  .content-2 {
+
+  }
+  .content-3 {
+   grid-row-start: 5;
+  }
+  .lf {
+    display: grid;
+    height: 200px;
+    padding-right: 83px;
+    padding-top: 50px;
+  }
+  .rf {
+    display: grid;
+    height: 200px;
+    padding-left: 83px;
+    padding-top: 50px;
+  }
+  .bur {
+    display: inherit;
+    background-color: none;
+  }
+  .burger {
+    display: inherit;
+    width: 27px;
+    height: 3px;
+    background: #C4C4C4;
+    margin-bottom: 4px;
+  }
 }
