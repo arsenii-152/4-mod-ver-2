@@ -7,13 +7,37 @@
     <title></title>
   </head>
   <body>
-    <nav>
-      <button class="bur" type="button" name="button">
-         <div class="burger"></div>
-         <div class="burger"></div>
-         <div class="burger"></div>
+    <nav class="main">
+      <nav class="mobile"role="navigation">
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
 
-      </button>
+      <!--
+      Some spans to act as a hamburger.
+
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu">
+        <a href="#"><li>О фестивале</li></a>
+        <a href="#"><li>Расписание</li></a>
+        <a href="#"><li>Площадка</li></a>
+        <a href="#"><li>Плакаты</li></a>
+      </ul>
+    </div>
+  </nav>
       <ul>
         <li class="about" >
           <a href="index.html">О фестивале</a>
