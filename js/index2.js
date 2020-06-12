@@ -1,11 +1,12 @@
 let rightClick = document.querySelector('.arr')
+let leftClick = document.querySelector('.arl')
 let background = document.querySelector('.back')
 
-let fix = anime ({
+let firstJump = anime ({
   targets: '.nextp',
-  translateY: -188,
+  translateX: -400,
   duration: 1,
-  autoplay: true
+  autoplay: false
 })
 
 rightClick.onclick = firstJump.play
