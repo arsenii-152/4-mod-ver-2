@@ -15,7 +15,37 @@
        <div class="burger"></div>
 
     </button>
-    <nav>
+    <nav class="main">
+      <nav class="mobile"role="navigation">
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+
+      <!--
+      Some spans to act as a hamburger.
+
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu">
+        <a href="index.html"><li>О фестивале</li></a>
+        <a href="index2.html"><li>Расписание</li></a>
+        <a href="index3.html"><li>Площадка</li></a>
+        <a href="index4.html"><li>Плакаты</li></a>
+      </ul>
+    </div>
+  </nav>
       <ul>
         <li class="about" >
           <a href="index.html">О фестивале</a>
@@ -31,80 +61,58 @@
         </li>
       </ul>
     </nav>
-    <h1 class="graph" >Графические</h1>
-    <div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><img src="img/4 graph.png" alt=""> </div>
-        <div class="swiper-slide"><img src="img/8,5.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/9.jpg" alt=""></div>
-        ...
+    <div class="main-grid-box">
+        <div class="one">
+           <h1>Графические</h1>
+        </div>
+         <div class="poster-1">
+
+         </div>
+         <div class="poster-2">
+
+         </div>
+         <div class="poster-3">
+
+         </div>
+         <div class="two">
+           <h1>Типографические</h1>
+         </div>
+         <div class="poster-4">
+
+         </div>
+         <div class="poster-5">
+
+         </div>
+         <div class="poster-6">
+
+         </div>
+         <div class="three">
+           <h1 class="three" >Анимированные</h1>
+         </div>
+         <div class="poster-7">
+
+         </div>
+         <div class="poster-8">
+
+         </div>
+         <div class="poster-9">
+
+         </div>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-</div>
-<h1 class="typograph" >Типорафические</h1>
-<div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><img src="img/typ1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/typ2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/typ3.jpg" alt=""></div>
-        ...
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-</div>
-
-
     <footer>
-        <h4 class="right">Портфолио</h4>
-        <img class="vk" src="img/vk.png" alt="">
-        <img class="hse" src="img/hse.png" alt="">
+    <div class="lf">
+       <div class="align">
+         <h4>Портфолио</h4>
+         <a class="vk" href="https://vk.com/pmc_vagnera"> <img src="img/vk.png" alt=""> </a>
+         <a class="hse"href="https://portfolio.hse.ru/Student/12788"> <img src="img/hse.png" alt=""> </a>
+       </div>
+    </div>
+    <div class="rf">
+      <div class="line">
         <h4>Партнеры</h4>
-        <img class="logos" src="img/logos.png" alt="">
+        <a class="logos" href=""> <img src="img/logos.png" alt=""> </a>
+      </div>
+    </div>
     </footer>
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script>
-  var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-
-    fadeEffect: {
-    crossFade: true
-    },
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  })
-  </script>
   </body>
 </html>

@@ -97,7 +97,7 @@ li {
   border-radius: 80px;
   margin-left: auto;
   margin-right: -53px;
-  margin-bottom: 187px;
+  transform: translate3d(0, -187px, 0);
 }
 h1 {
   font-family: Ubuntu;

@@ -5,6 +5,7 @@ let background = document.querySelector('.back')
 let firstJump = anime ({
   targets: '.nextp',
   translateX: -400,
+  translateY: -187,
   duration: 1,
   autoplay: false
 })
