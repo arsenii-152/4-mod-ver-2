@@ -6,7 +6,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+.st14:hover {
+  fill: red;
+  transform: translateX(100px);
+  transition: 5000ms;
 }
 a {
   color: #FFF;

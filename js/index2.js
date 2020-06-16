@@ -1,16 +1,8 @@
-let rightClick = document.querySelector('.arr')
-let leftClick = document.querySelector('.arl')
-let background = document.querySelector('.back')
-
-let firstJump = anime ({
-  targets: '.nextp',
-  translateX: -400,
-  translateY: -187,
-  duration: 1,
+let controller = new ScrollMagic.Controller({vertical: false})
+let stageOne = document.querySelector('.nextp1')
+let oneFrame = anime({
+  targets: stageOne,
+  translateX: '-10vw',
+  easing: 'linear',
   autoplay: false
 })
-
-rightClick.onclick = firstJump.play
-document.querySelector('.arr').addEventListener('click', function() {
-    background.style.background = "#3D019D"
-});
