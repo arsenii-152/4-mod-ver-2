@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +8,7 @@
   scroll-behavior: smooth;
 }
 body {
-  background-color: black;
-  overflow: hidden;
+  background-color: #ACACAC;
 }
 a {
   color: #FFF;
@@ -15,18 +17,25 @@ a {
 a:link {
   color: #FFF;
 }
-nav {
+.bur {
+  display: none;
+}
+.burger {
+  display: none;
+}
+.main {
   text-align: center;
-  position: relative;
-  background-color: black;
+  position: fixed;
   width: 100%;
   height: 90px;
   padding-top: 27px;
   padding-bottom: 27px;
   z-index: 1;
-  margin-bottom: 1px;
 }
-li {
+.about,
+.schedule,
+.place,
+.posters {
   font-family: Ubuntu;
   display: inline-block;
   color: white;
@@ -67,8 +76,13 @@ li {
    -webkit-text-fill-color: transparent;
    color: #0B2349;
 }
+.mobile {
+  display: none;
+}
+
 
 h1 {
+  grid-row-start: 1;
   font-family: Ubuntu;
   font-style: normal;
   font-weight: normal;
@@ -92,9 +106,10 @@ p {
   height: 300px;
 }
 .grider {
+  padding-top: 100px;
   display: grid;
-  grid-template-columns: 100%;
-  transform: translateY(50px);
+  grid-template-columns: 100% 100% 100%;
+  background-color: black;
 }
 .box {
   display: grid;
@@ -103,7 +118,11 @@ p {
 .one,
 .two,
 .three {
+  padding-top: 60px;
   height: 200px;
+}
+.one {
+  background-color: black;
 }
 .line1,
 .line2,
@@ -116,10 +135,10 @@ p {
   background: #FFFFFF;
 }
 .line2 {
-  background: #AC79FF;
+  background: #797979;
 }
 .line3 {
-  background: #FF0000;
+  background: #797979;
 }
 .center-round1,
 .center-round2,
@@ -134,13 +153,17 @@ p {
   margin-top: -15px;
 }
 .center-round1 {
-  background-color: #FFF;
+  background: #FFF;
 }
 .center-round2 {
-  background: #AC79FF;
+  background: #797979;
+  width: 113px;
+  height: 113px;
 }
 .center-round3 {
-  background: #FF0000;
+  background: #797979;
+  width: 113px;
+  height: 113px;
 }
 .inner-round1,
 .inner-round2,
@@ -154,18 +177,16 @@ p {
   background-color: #000000;
 }
 .inner-round2 {
-  background: #3D019D;
+  opacity: 0;
+  background: #797979;
 }
 .inner-round3 {
-  background: #9C1212;
+  opacity: 0;
+  background: #797979;
 }
-.nextp1 {
-  width: 94px;
-  height: 94px;
-  background: #C3ACEC;
-  border-radius: 80px;
-  margin-left: auto;
-  margin-right: -53px;
-  margin-top: -193px;
-  }
+.par2,
+.par3,
+.header2,
+.header3 {
+  color: #797979;
 }

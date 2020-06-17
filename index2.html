@@ -2,72 +2,98 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index2.css">
-    <script src="js/anime.min.js"></script>
     <title></title>
   </head>
-  <body class="back" >
-    <nav>
-      <ul>
-        <li class="about" >
-          <a href="index.html">О фестивале</a>
-        </li>
-        <li class="schedule" >
-          <a href="index2.html">Расписание</a>
-        </li>
-        <li class="place" >
-          <a href="index3.html">Площадка</a>
-        </li>
-        <li class="posters" >
-          <a href="index4.html">Плакаты</a>
-        </li>
-      </ul>
+  <body>
+    <body class="back" >
+      <nav class="main">
+        <nav class="mobile"role="navigation">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="index.html"><li>О фестивале</li></a>
+          <a href="index2.html"><li>Расписание</li></a>
+          <a href="index3.html"><li>Площадка</li></a>
+          <a href="index4.html"><li>Плакаты</li></a>
+        </ul>
+      </div>
     </nav>
+        <ul>
+          <li class="about" >
+            <a href="index.html">О фестивале</a>
+          </li>
+          <li class="schedule" >
+            <a href="index2.html">Расписание</a>
+          </li>
+          <li class="place" >
+            <a href="index3.html">Площадка</a>
+          </li>
+          <li class="posters" >
+            <a href="index4.html">Плакаты</a>
+          </li>
+        </ul>
+      </nav>
+    <div class="box" id="pinContainer">
+      <section class="one" >
+        <div class="line1">
 
-  <div class="box" id="pinContainer">
-    <section class="one" >
-      <div class="line1">
+        </div>
+        <div class="center-round1">
+             <div class="inner-round1"></div>
+        </div>
+      </section>
+      <section class="two" >
+        <div class="line2">
 
-      </div>
-      <div class="center-round1">
-           <div class="inner-round1"></div>
-      </div>
-      <div class="nextp1">
+        </div>
+        <div class="center-round2">
+             <div class="inner-round2"></div>
+        </div>
+      </section>
+      <section class="three" >
+        <div class="line3">
 
-      </div>
-    </section>
-    <section class="two" >
-      <div class="line2">
-
-      </div>
-      <div class="center-round2">
-           <div class="inner-round2"></div>
-      </div>
-      <div class="nextp2">
-
-      </div>
-    </section>
-    <section class="three" >
-      <div class="line3">
-
-      </div>
-      <div class="center-round3">
-           <div class="inner-round3"></div>
-      </div>
-      <div class="nextp3">
-
-      </div>
-    </section  >
-  </div>
-    <div class="grider">
-      <h1>28 апреля <br> день спокойный</h1>
-      <p>
-        Спокойные и&nbsp;не&nbsp;раздражающие цвета подсветки, неинтенсивная смена цветов, расслабляющая музыка и&nbsp;слабоалкогольные коктейли в&nbsp;барной карте
-      </p>
+        </div>
+        <div class="center-round3">
+             <div class="inner-round3"></div>
+        </div>
+      </section  >
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
-    <script src="js/index2.js"></script>
+      <div class="grider">
+        <h1  class="header1" >28 апреля <br> день спокойный</h1>
+        <p class="par1" >
+          Спокойные и&nbsp;не&nbsp;раздражающие цвета подсветки, неинтенсивная смена цветов, расслабляющая музыка и&nbsp;слабоалкогольные коктейли в&nbsp;барной карте
+        </p>
+        <h1 class="header2">29 апреля <br> день драйва</h1>
+        <p  class="par2">
+          Яркие, кислотные цвета подсветки, смена цветов в&nbsp;такт динамичной и&nbsp;драйвовой музыки со&nbsp;сцены, клубные коктейли в&nbsp;барной карте
+        </p>
+        <h1 class="header3" >30 апреля <br> день анархии</h1>
+        <p class="par3">
+          Красный, много красного, агрессивная и&nbsp;&laquo;забойная&raquo; музыка со&nbsp;сцены, самые крепкие и&nbsp;крышесносящие коктейли в&nbsp;барной карте
+        </p>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
+      <script src="js/index2.js"></script>
   </body>
 </html>

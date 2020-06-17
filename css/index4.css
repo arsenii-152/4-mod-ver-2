@@ -8,6 +8,7 @@
   box-sizing: border-box;
 }
 body {
+  background: linear-gradient(180deg, #E4BA4D 0%, #CFE44D 53.65%, #62E44D 100%); 
 }
 a {
   color: #FFF;
@@ -37,8 +38,7 @@ a:link {
 }
 .main {
   text-align: center;
-  position: relative;
-  background: linear-gradient(90deg, #7700B0 0%, #002BB5 0.01%, #7700B0 84.77%);;
+  position: fixed;
   width: 100%;
   height: 90px;
   padding-top: 27px;
