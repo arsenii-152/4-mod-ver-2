@@ -624,7 +624,5 @@ p {
 
 }
 @media (max-width:375px) {
- p {
-   text-align: center;
- }
+
 }
