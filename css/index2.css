@@ -367,3 +367,13 @@ p {
     display: inherit;
   }
 }
+@media (max-width: 414px) {
+  h1 {
+    font-size: 36px;
+    width: 400px;
+  }
+  p {
+    font-size: 18px;
+      width: 200px;
+  }
+}
