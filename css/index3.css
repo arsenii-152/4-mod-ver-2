@@ -617,7 +617,10 @@ p {
     .logos {
       margin-left: -12px;
     }
-
+   iframe {
+     width: 280px;
+     height: 315px;
+   }
 
 }
 @media (max-width:375px) {
